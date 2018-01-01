@@ -173,7 +173,7 @@ public class DrawerActivity extends AppCompatActivity
                     String location = etxLocation.getText().toString();
 
                     if (location != null && location.length() > 0) {
-                        getWeatherForecast(location);
+                        getWeatherForecast(location.trim());
                         dialog.dismiss();
                     } else {
                         etxLocation.setError("Please Enter Valid Location");
